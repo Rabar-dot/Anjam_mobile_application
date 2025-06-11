@@ -1,0 +1,147 @@
+name: anjam_hospital
+description: Anjam Hospital Management System - Centralized healthcare application for patients, doctors, and medical staff with Face ID, digital cards, and multi-language support.
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# App version
+version: 1.0.0+1
+
+# Flutter SDK version constraints
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Localization support for multiple languages
+  flutter_localizations:
+    sdk: flutter
+  
+  # Date, time formatting and internationalization
+  intl: ^0.19.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # HTTP requests for API calls
+  http: ^1.1.0
+  
+  # Local storage and preferences
+  shared_preferences: ^2.2.2
+  
+  # Secure storage for sensitive data
+  flutter_secure_storage: ^9.0.0
+  
+  # Biometric authentication (Face ID / Fingerprint)
+  local_auth: ^2.1.6
+  
+  # Image handling and caching
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  
+  # File handling and path utilities
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # PDF viewing for test results
+  flutter_pdfview: ^1.3.2
+  
+  # Calendar widget for results view
+  table_calendar: ^3.0.9
+  
+  # SVG support for logos
+  flutter_svg: ^2.0.9
+  
+  # Permissions handling
+  permission_handler: ^11.0.1
+  
+  # URL launcher for phone calls and web links
+  url_launcher: ^6.2.1
+  
+  # Device info for platform-specific features
+  device_info_plus: ^9.1.1
+  
+  # Connectivity checking
+  connectivity_plus: ^5.0.1
+  
+  # QR code generation for digital cards
+  qr_flutter: ^4.1.0
+  
+  # QR code scanning
+  qr_code_scanner: ^1.0.1
+  
+  # Animation support
+  lottie: ^2.7.0
+  
+  # Icons (Material Icons are included by default)
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting rules for code quality
+  flutter_lints: ^3.0.1
+  
+  # App icon generation
+  flutter_launcher_icons: ^0.13.1
+
+# App launcher icons configuration
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    background_color: "#2E7D32"
+    theme_color: "#2E7D32"
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+
+# Flutter configuration
+flutter:
+  uses-material-design: true
+  
+  # Asset directories
+  assets:
+    - assets/images/
+    - assets/logos/
+    - assets/icons/
+    - assets/animations/
+    - assets/hospitals/
+    - assets/news/
+    - assets/results/
+    - assets/translations/
+    
+  # Custom fonts
+  fonts:
+    - family: SF Pro Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Display-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Display-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display-Bold.ttf
+          weight: 700
+    
+    - family: SF Pro Text
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Text-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Text-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Text-Bold.ttf
+          weight: 700
